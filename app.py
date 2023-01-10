@@ -24,11 +24,14 @@ fig1 = px.line(df1, x="date", y="Sales",color="region", hover_name="region")
 #fig1 = px.bar(df, x="Product", y="date", color="region", barmode="group")
 
 app.layout = html.Div(children=[
-    html.H1(children='Soul Foods’s Data Visualization'),
+    html.H1(children='Soul Foods’s Data Visualization', style={'color': 'white',
+    'text-align':'center',
+    'background-color':'grey'}),
 
     html.Div(children='''
         Product : Visualization of Pink Morsel sales by region within the defferents periods
-    '''),
+    ''', style={'text-align': 'center',
+    'text-decoration':'underline'}),
 
     dcc.Graph(
         id='example-graph',
