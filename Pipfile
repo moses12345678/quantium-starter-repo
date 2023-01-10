@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 pandas = "*"
 dash = {extras = ["testing"], version = "*"}
+plotly = "*"
+plotly-express = "*"
 
 [dev-packages]
 
