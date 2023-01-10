@@ -26,7 +26,8 @@ fig1 = px.line(df1, x="date", y="Sales",color="region", hover_name="region")
 app.layout = html.Div(children=[
     html.H1(children='Soul Foods’s Data Visualization', style={'color': 'white',
     'text-align':'center',
-    'background-color':'grey'}),
+    'background-color':'grey',
+    "border-radius": "20px"}),
 
     html.Div(children='''
         Product : Visualization of Pink Morsel sales by region within the defferents periods
@@ -34,7 +35,7 @@ app.layout = html.Div(children=[
     'text-decoration':'underline'}),
 
     dcc.Graph(
-        id='example-graph',
+        id='visualisation',
         figure=fig1,
         #id1='example-graph1',
         #figure1=fig1

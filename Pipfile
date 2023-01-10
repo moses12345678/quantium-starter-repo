@@ -8,6 +8,8 @@ pandas = "*"
 dash = {extras = ["testing"], version = "*"}
 plotly = "*"
 plotly-express = "*"
+pytest = "*"
+pytest-dash = "*"
 
 [dev-packages]
 
